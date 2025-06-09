@@ -1,0 +1,19 @@
+.cta-btn {
+      background-color: #17a2b8;
+      color: white;
+    }
+
+    .slide-box img {
+      max-height: 300px;
+    }
+
+    .active-nav {
+      border-bottom: 2px solid white;
+    }
+    #imgPet{
+      max-height: 24rem;
+    }
+
+#navLinks .navbar-nav {
+  gap: 2rem; 
+}

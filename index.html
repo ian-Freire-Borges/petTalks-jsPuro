@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetTalk</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="index.css" />
+  <script src="Script.js"></script>
+</head>
+<body class="bg-light min-vh-100 d-flex flex-column">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center me-5" href="#" onclick="setPagina('Inicio')">
+        <img src="assets/9UbGzd-LogoMakr.png" width="80" height="80" class="me-2" alt="Logo">
+        <span class="fw-bold text-light">PetTalk</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="setPagina('Inicio')">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="setPagina('Planos')">Planos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="setPagina('Depoimentos')">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="setPagina('Funcionalidades')">Funcionalidades</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal das paginas -->
+  <main class="flex-grow-1">
+    <!-- Conteúdo do inicio -->
+    <div id="Inicio" class="pagina">
+      <section class="hero py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+              <h1 class="display-4 fw-bold">Conecte-se com seu pet como nunca antes</h1>
+              <p class="lead mt-3">
+                O <strong>PetTalk</strong> traduz os sentimentos do seu animal com base em sons e comportamentos.<br>
+                Uma experiência única de conexão emocional, diretamente no seu celular.
+              </p>
+              <button class="btn btn-primary rounded-pill cta-btn" onclick="setPagina('Funcionalidades')">Descubra mais</button>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="slide-box">
+                <img id="imgPet" src="assets/alvan-nee-1VgfQdCuX-4-unsplash.jpg" class="img-fluid rounded mb-3" alt="Pet">
+                <p id="slideText" class="fs-5">Entenda o que seu pet sente de verdade</p>
+                <button class="btn btn-primary rounded-pill cta-btn" onclick="proximoSlide()">➤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Conteúdo dos panos -->
+    <div id="Planos" class="pagina d-none">
+      <div class="container py-5"></div>
+    </div>
+
+    <!-- Conteúdo dos depoimentos-->
+ <div id="Depoimentos" class="pagina">
+  <div class="container py-5">
+    <h2 class="text-center mb-5">O Que Nossos Clientes Dizem</h2>
+    <div id="depoimentos-row" class="row">
+    </div>
+    <div class="text-center mt-4">
+      <button id="mostrarMaisBtn" class="btn btn-primary">Mostrar Mais</button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Conteúdo das funcionalidade-->
+    <div id="Funcionalidades" class="pagina d-none">
+      <div class="container py-5">
+        <h2>Funcionalidades</h2>
+        <p>Conteúdo das funcionalidades...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col text-md-start text-center">
+          <p class="mb-0">&copy; 2025 PetTalk. Todos os direitos reservados.</p>
+        </div>
+        <div class="col text-md-end text-center">
+          <a href="https://www.linkedin.com/in/ian-borges-796458294/" class="text-light me-3" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/ian-borges-796458294/" class="text-light me-3" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ian-borges-796458294/" class="text-light me-3" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
